@@ -38,7 +38,7 @@ We welcome contributions to this repository! Please read our [Contribution Guide
 
 ما از مشارکت در این مخزن استقبال می‌کنیم! لطفاً [دستورالعمل‌های مشارکت](link-to-contribution-guidelines) ما را برای اطلاعات بیشتر در مورد نحوه مشارکت بخوانید.
 
-مجوز (License)
+## License / مجوز
 
 این مخزن تحت مجوز (GNU GPL (General Public License منتشر شده است.
 
