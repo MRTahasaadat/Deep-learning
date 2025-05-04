@@ -23,7 +23,7 @@ Welcome to this repository! Here, you will find a curated collection of educatio
 ## Resources / منابع
 ****************************
 ### Tutorials / آموزش‌ها
-***************************8
+***************************
 ### Courses / دوره‌ها
 **************************
 ### Books / کتاب‌ها
