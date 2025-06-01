@@ -52,7 +52,7 @@ $$f(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}}$$
 
 4. ReLU (Rectified Linear Unit)
 
-$$f(z) =\begin{cases}z & \text{if } z \geq 0 \\\\0 & \text{if } z < 0\end{cases}$$
+$$f(z)=max(0,z)$$
 
 📈 معروف‌ترین و پرکاربردترین تابع فعال‌سازی
 
@@ -61,8 +61,7 @@ $$f(z) =\begin{cases}z & \text{if } z \geq 0 \\\\0 & \text{if } z < 0\end{cases}
 ❌ مشکل "مرگ نورون" (Dead Neurons) – اگر ورودی همیشه منفی باشد، نورون خاموش می‌ماند
 
 5. Leaky ReLU
-
-$$f(z)=max(0,z)$$
+ $$f(z) =\begin{cases}z & \text{if } z \geq 0 \\\\\alpha z & \text{if } z < 0 \quad (\alpha \approx 0.01)\end{cases}$$
 
 ✅ حل مشکل مرگ نورون در ReLU
 
