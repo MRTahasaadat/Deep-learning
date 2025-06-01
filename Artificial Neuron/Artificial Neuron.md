@@ -46,10 +46,10 @@
 $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 
 فرمول ریاضی نورون مصنوعی
-z=∑i=1nwixi+b
+$$z=\frac∑i=1nwixi+b
 z=i=1∑n​wi​xi​+b
-y=f(z)
-y=f(z)
+\y=f(z)
+y=f(z)$$
 
 که در آن:
 
