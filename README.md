@@ -1,44 +1,116 @@
-# Deep Learning Resources and Projects / منابع و پروژه‌های یادگیری عمیق
+# Deep Learning Tutorial 📚 | آموزش یادگیری عمیق
 
-## Introduction / مقدمه
+Welcome to the **Deep Learning Tutorial** repository — a complete, structured, and bilingual (English & Persian) guide to learning Deep Learning using **TensorFlow**.
 
-Welcome to this repository! Here, you will find a curated collection of educational resources and projects related to deep learning. Whether you are a beginner or an experienced practitioner, this repository aims to provide valuable content for learning and applying deep learning techniques.
+به مخزن **آموزش یادگیری عمیق** خوش آمدید — راهنمایی کامل، ساختاریافته و دوزبانه برای یادگیری یادگیری عمیق با استفاده از **TensorFlow**.
 
-به این مخزن خوش آمدید! در اینجا، مجموعه‌ای از منابع آموزشی و پروژه‌های مرتبط با یادگیری عمیق را خواهید یافت. چه مبتدی باشید و چه یک متخصص باتجربه، هدف این مخزن ارائه محتوای ارزشمند برای یادگیری و به کارگیری تکنیک‌های یادگیری عمیق است.
+---
 
-## Table of Contents / فهرست مطالب
+## 🎯 Objectives | اهداف آموزشی
 
-- [Resources / منابع](#resources)
-  - [Tutorials / آموزش‌ها](#tutorials)
-  - [Courses / دوره‌ها](#courses)
-  - [Books / کتاب‌ها](#books)
-  - [Articles / مقالات](#articles)
-- [Projects / پروژه‌ها](#projects)
-  - [Project 1: Image Classification / پروژه 1: طبقه‌بندی تصاویر](#project-1-image-classification)
-  - [Project 2: Natural Language Processing / پروژه 2: پردازش زبان طبیعی](#project-2-natural-language-processing)
-  - [Project 3: Time Series Analysis / پروژه 3: تحلیل سری‌های زمانی](#project-3-time-series-analysis)
-- [Contribution / مشارکت](#contribution)
-- [License / مجوز](#license)
+This project is designed to help beginners and intermediate learners:
 
-## Resources / منابع
-****************************
-### Tutorials / آموزش‌ها
-***************************
-### Courses / دوره‌ها
-**************************
-### Books / کتاب‌ها
-********************************
+این پروژه با هدف آموزش مفاهیم پایه و پیشرفته یادگیری عمیق طراحی شده است تا:
 
-### Articles / مقالات
-*************************
+- Understand the mathematical and conceptual foundations of deep learning  
+  درک پایه‌های ریاضی و مفهومی یادگیری عمیق  
+- Learn to build and train neural networks from scratch using TensorFlow  
+  آموزش ساخت و آموزش شبکه‌های عصبی با TensorFlow  
+- Apply models to real-world tasks such as image classification, sequence modeling, etc.  
+  استفاده از مدل‌ها در کاربردهای واقعی مانند طبقه‌بندی تصویر، مدل‌سازی دنباله‌ای و غیره  
 
-## Contribution / مشارکت
+---
 
-We welcome contributions to this repository! Please read our [Contribution Guidelines](link-to-contribution-guidelines) for more information on how to contribute.
+## 📁 Folder Structure | ساختار پوشه‌ها
 
-ما از مشارکت در این مخزن استقبال می‌کنیم! لطفاً [دستورالعمل‌های مشارکت](link-to-contribution-guidelines) ما را برای اطلاعات بیشتر در مورد نحوه مشارکت بخوانید.
+Each chapter is organized as a folder with:
 
-## License / مجوز
+هر فصل در قالب یک پوشه شامل موارد زیر است:
+
+- `README.md`: Conceptual explanations with diagrams (bilingual)  
+  توضیحات مفهومی همراه با نمودار (دوزبانه)
+- `*.ipynb`: Source code and experiments in Jupyter Notebook  
+  کدهای تمرینی و پیاده‌سازی در نوت‌بوک Jupyter  
+
+### 🗂️ Chapters | سرفصل‌ها:
+
+```plaintext
+01_Introduction/                      ← مقدمه‌ای بر یادگیری ماشین و یادگیری عمیق
+02_Artificial_Neuron/                ← نورون مصنوعی و مدل پایه
+03_Neural_Network_Basics/            ← مفاهیم پایه شبکه عصبی
+04_Backpropagation/                  ← الگوریتم پس‌انتشار خطا
+05_Activation_Functions/             ← توابع فعال‌سازی
+06_Optimization_and_Gradient_Descent/← بهینه‌سازی و گرادیان نزولی
+07_Regularization_and_Overfitting/  ← تنظیم‌سازی و مقابله با بیش‌برازش
+08_Convolutional_Neural_Networks/    ← شبکه‌های عصبی پیچشی (CNN)
+09_Recurrent_Neural_Networks/        ← شبکه‌های عصبی بازگشتی (RNN)
+10_Transfer_Learning/                ← یادگیری انتقالی
+11_Project_Image_Classification/     ← پروژه عملی: طبقه‌بندی تصویر
+
+⚙️ Technologies Used | تکنولوژی‌ها
+
+    Python 3.10+
+
+    TensorFlow
+
+    Jupyter Notebook
+
+    Google Colab (Optional)
+
+    Matplotlib / Seaborn for visualization
+
+🚀 How to Use | نحوه استفاده
+
+    Clone the repository:
+
+git clone https://github.com/MRTahasaadat/Deep-learning.git
+
+    Create and activate a virtual environment (optional):
+
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+    Install required packages:
+
+pip install -r requirements.txt
+
+    Open notebooks:
+
+jupyter notebook
+
+Or simply open any .ipynb file in Google Colab for direct cloud-based use.
+🤝 Contribution | مشارکت
+
+You're welcome to fork this repository and contribute by:
+
+شما می‌توانید پروژه را fork کرده و با موارد زیر در توسعه آن مشارکت داشته باشید:
+
+    Fixing errors or typos
+
+    Adding new examples or chapters
+
+    Improving translations
+
+    Raising issues and suggesting improvements
+
+🌐 Language Policy | سیاست زبانی
+
+    All content is written in both English and Persian for maximum accessibility.
+    تمامی مطالب به‌صورت دوزبانه (انگلیسی و فارسی) نوشته شده‌اند.
+
+    Comments in code cells are also bilingual.
+    کامنت‌های درون کد نیز دوزبانه هستند.
+
+📬 Contact | تماس
+
+For feedback, suggestions or collaborations, feel free to reach out:
+
+برای ارائه نظر، پیشنهاد یا همکاری:
+
+📧 mrtahasaadat@gmail.com
+🔗 MRTahasaadat/Deep-learning
+
+📜 License | مجوز
 
 این مخزن تحت مجوز (GNU GPL (General Public License منتشر شده است.
 
