@@ -62,7 +62,7 @@ $$f(z) =\begin{cases}z & \text{if } z \geq 0 \\\\0 & \text{if } z < 0\end{cases}
 
 5. Leaky ReLU
 
-$$f(z) =\begin{cases}z & \text{if } z \geq 0 \\\\\alpha z & \text{if } z < 0 \quad (\alpha \approx 0.01)\end{cases}$$
+$$f(z)=max(0,z)$$
 
 ✅ حل مشکل مرگ نورون در ReLU
 
