@@ -47,6 +47,35 @@ Common Algorithms | الگوریتم‌های رایج:
 
     PCA (Principal Component Analysis) | تجزیه مؤلفه‌های اصلی
 
+
+⚖️ 3. Semi-Supervised Learning
+
+یادگیری نیمه‌نظارتی
+
+    EN: Combines a small amount of labeled data with a large amount of unlabeled data to improve learning.
+    FA: در یادگیری نیمه‌نظارتی، از ترکیبی از مقدار کمی داده‌ی برچسب‌خورده و مقدار زیادی داده‌ی بدون برچسب برای آموزش مدل استفاده می‌شود.
+
+Why important? | چرا مهم است؟
+
+    Labeled data is expensive, unlabeled data is abundant.
+
+    داده‌ی برچسب‌خورده معمولاً کمیاب و پرهزینه است، ولی داده‌ی خام به وفور یافت می‌شود.
+
+Examples | نمونه‌ها:
+
+    Image recognition with few labeled images | تشخیص تصویر با تعداد کمی تصویر برچسب‌خورده
+
+    Text classification with limited annotations | دسته‌بندی متن با داده‌های محدود
+
+Techniques:
+
+    Pseudo-labeling
+
+    Consistency regularization
+
+    Graph-based models
+
+
 🕹️ Reinforcement Learning
 
 یادگیری تقویتی
@@ -73,3 +102,17 @@ Key Concepts | مفاهیم کلیدی:
     Policy | سیاست یادگیری
 
     Q-Learning, Deep Q-Network (DQN) | الگوریتم‌های RL رایج
+
+
+
+| Type                     | Uses Labels?  | Input Type     | Goal                        | Example                           |
+| ------------------------ | ------------- | -------------- | --------------------------- | --------------------------------- |
+| Supervised Learning      | ✅ Yes         | Labeled data   | Predict output              | Spam detection                    |
+| Unsupervised Learning    | ❌ No          | Unlabeled data | Discover hidden patterns    | Customer segmentation             |
+| Semi-Supervised Learning | ⚠️ Few labels | Mixed data     | Improve with limited labels | Image classification (few labels) |
+| Reinforcement Learning   | ❌ (Reward)    | Environment    | Maximize reward             | Robot navigation, games           |
+
+📌 Summary in One Line
+
+    EN: ML can be supervised, unsupervised, semi-supervised, or reinforcement-based, depending on how data and feedback are used.
+    FA: یادگیری ماشین بسته به نحوه‌ی استفاده از داده و بازخورد، می‌تواند نظارت‌شده، بدون‌نظارت، نیمه‌نظارتی یا تقویتی باشد.
