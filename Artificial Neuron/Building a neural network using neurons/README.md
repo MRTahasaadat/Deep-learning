@@ -11,9 +11,11 @@ A neuron is a simple computational unit that receives inputs, weights them, sums
 
 فرمول نورون:
 
-y=f(∑i=1nwixi+b)
-y=f(i=1∑n​wi​xi​+b)
- 
+
+   $$z = \sum_{i=1}^{n} w_i x_i + b$$
+   
+   $$y = f(z)$$
+    
 2. ساختن لایه از نورون‌ها
 
 Multiple neurons arranged side by side form a layer. Each neuron receives the same inputs but has its own weights and bias.
