@@ -64,6 +64,22 @@ TensorFlow Introduction (High-level)
     loss, acc = model.evaluate(X_test, y_test)
     print("Accuracy:", acc)
 
+   output
+   
+              output-->
+              Epoch 1/5
+              1875/1875 ━━━━━━━━━━━━━━━━━━━━ 5s 2ms/step - accuracy: 0.8737 - loss: 0.4396 - val_accuracy: 0.9564 - val_loss: 0.1436
+              Epoch 2/5
+              1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.9654 - loss: 0.1189 - val_accuracy: 0.9739 - val_loss: 0.0903
+              Epoch 3/5
+              1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.9765 - loss: 0.0772 - val_accuracy: 0.9706 - val_loss: 0.0926
+              Epoch 4/5
+              1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.9836 - loss: 0.0548 - val_accuracy: 0.9762 - val_loss: 0.0760
+              Epoch 5/5
+              1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.9877 - loss: 0.0420 - val_accuracy: 0.9764 - val_loss: 0.0759
+              313/313 ━━━━━━━━━━━━━━━━━━━━ 0s 1ms/step - accuracy: 0.9731 - loss: 0.0887 
+              Accuracy: 0.9764000177383423
+
  ساختار پروژه با TensorFlow
 
     
