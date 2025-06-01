@@ -49,24 +49,23 @@
 
 <script type="text/javascript" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-    $$
-    z = \sum_{i=1}^{n} w_i x_i + b
-    $$
-    
-    $$
-    y = f(z)
-    $$
-    
-    ---
-    
+   $$
+   z = \sum_{i=1}^{n} w_i x_i + b
+   $$
+   
+   $$
+   y = f(z)
+   $$
+   
+</script>    
    توضیحات:
-    
-    - \( x_i \): ورودی‌ها  
-    - \( w_i \): وزن هر ورودی  
-    - \( b \): بایاس (bias)  
-    - \( f(z) \): تابع فعال‌سازی (Activation Function)  
-    - \( y \): خروجی نورون  
+   
+
+   - \( x_i \): ورودی‌ها  
+   - \( w_i \): وزن هر ورودی  
+   - \( b \): بایاس (bias)  
+   - \( f(z) \): تابع فعال‌سازی (Activation Function)  
+   - \( y \): خروجی نورون  
 
 
 نمونه‌ای از توابع فعال‌سازی (Activation Functions)
