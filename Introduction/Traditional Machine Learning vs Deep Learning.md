@@ -3,6 +3,7 @@ Traditional Machine Learning vs Deep Learning
  مقدمه | Introduction
 
    EN: While both Traditional Machine Learning and Deep Learning are subsets of Artificial Intelligence, they differ in how they process data, their dependence on features, and their ideal use-cases.
+   
    FA: در حالی که یادگیری ماشین سنتی و یادگیری عمیق هر دو زیرمجموعه‌های هوش مصنوعی هستند، در نحوه‌ی پردازش داده، وابستگی به ویژگی‌ها و موارد کاربرد تفاوت‌های اساسی دارند.
 
  تفاوت‌های کلیدی | Key Differences
@@ -63,12 +64,20 @@ Deep Learning – طبقه‌بندی همان داده‌ها با شبکه ع�
     print("Accuracy (Deep Learning):", acc)
 
  چه زمانی Traditional و چه زمانی Deep Learning؟
+ 
 شرایط شما	توصیه
-داده‌ی کم + ویژگی‌های مشخص	Traditional ML
-داده‌ی پیچیده (تصویر، صدا) + داده‌ی زیاد	Deep Learning
-نیاز به شفافیت و توضیح‌پذیری	Traditional ML
-انعطاف بالا و استخراج خودکار ویژگی‌ها	Deep Learning
- نتیجه‌گیری
+
+داده‌ی کم + ویژگی‌های مشخص	
+Traditional ML
+داده‌ی پیچیده (تصویر، صدا) + داده‌ی زیاد	
+Deep Learning
+نیاز به شفافیت و توضیح‌پذیری	
+Traditional ML
+انعطاف بالا و استخراج خودکار ویژگی‌ها	
+Deep Learning
+  نتیجه‌گیری
+
 
    EN: Traditional ML is ideal for small, structured problems; Deep Learning shines with complex, high-volume data.
+   
    FA: یادگیری ماشین سنتی برای مسائل ساده با داده‌ی کم مناسب است، در حالی که یادگیری عمیق در شرایط پیچیده با داده‌ی زیاد می‌درخشد.
