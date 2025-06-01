@@ -39,7 +39,7 @@ Applications of Deep Learning
 
     
 
-🏥 4. سلامت و پزشکی (Healthcare)
+ 4. سلامت و پزشکی (Healthcare)
 
    Disease prediction from X-rays or MRIs, drug discovery
   
