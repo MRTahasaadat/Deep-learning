@@ -50,7 +50,9 @@ Multiple neurons arranged side by side form a layer. Each neuron receives the sa
       
       print("Layer output:", output)
       
- 
+ output
+     
+     Layer output: [0.38 0.76 0.95 0.37]
   توضیح:
 
  ورودی XX به همه نورون‌ها ارسال می‌شود
@@ -128,12 +130,30 @@ output
     from tensorflow.keras.layers import Dense
     
     model = Sequential([
-        Dense(4, input_shape=(3,), activation='relu'),  # لایه مخفی 4 نورونه
-        Dense(3, activation='relu'),                     # لایه دوم 3 نورونه
-        Dense(1, activation='sigmoid')                   # خروجی 1 نورون
+        Dense(4, input_shape=(3,), activation='relu'),  
+        Dense(3, activation='relu'),                     
+        Dense(1, activation='sigmoid')                   
     ])
     
     model.summary()
+
+ output
+ 
+ 
+ 
+    Model: "sequential"
+    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+    ┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
+    ┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+    │ dense (Dense)                        │ (None, 4)                   │              16 │
+    ├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+    │ dense_1 (Dense)                      │ (None, 3)                   │              15 │
+    ├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+    │ dense_2 (Dense)                      │ (None, 1)                   │               4 │
+    └──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
+     Total params: 35 (140.00 B)
+     Trainable params: 35 (140.00 B)
+     Non-trainable params: 0 (0.00 B)
 
 4.نورون‌ها چگونه شبکه می‌سازند؟
 
