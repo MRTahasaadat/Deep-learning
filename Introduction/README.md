@@ -43,8 +43,10 @@ Real-world Example | مثال واقعی:
     EN: Deep Learning is a subfield of Machine Learning that uses artificial neural networks with many layers (deep networks) to model complex patterns in data.
     FA: یادگیری عمیق زیرمجموعه‌ای از یادگیری ماشین است که از شبکه‌های عصبی مصنوعی با لایه‌های زیاد (شبکه‌های عمیق) برای مدل‌سازی الگوهای پیچیده در داده‌ها استفاده می‌کند.
 
-Why “Deep”? | چرا به آن "عمیق" می‌گویند؟
+Why “Deep”? | 
+چرا به آن "عمیق" می‌گویند؟
 Because it uses multiple layers of neurons to extract features at various levels of abstraction.
+
 زیرا از چندین لایه نورون استفاده می‌کند تا ویژگی‌ها را در سطوح مختلف انتزاع استخراج کند.
 
 Popular Architectures | معماری‌های محبوب:
