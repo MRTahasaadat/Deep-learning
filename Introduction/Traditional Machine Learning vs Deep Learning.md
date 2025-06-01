@@ -28,39 +28,39 @@ Traditional Machine Learning vs Deep Learning
 Traditional ML – طبقه‌بندی با استفاده از ویژگی‌های دستی
 
 
-from sklearn.datasets import load_iris
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split
-
-data = load_iris()
-X_train, X_test, y_train, y_test = train_test_split(data.data, data.target, test_size=0.2)
-
-model = DecisionTreeClassifier()
-model.fit(X_train, y_train)
-
-print("Accuracy (Traditional ML):", model.score(X_test, y_test))
-
+    from sklearn.datasets import load_iris
+    from sklearn.tree import DecisionTreeClassifier
+    from sklearn.model_selection import train_test_split
+    
+    data = load_iris()
+    X_train, X_test, y_train, y_test = train_test_split(data.data, data.target, test_size=0.2)
+    
+    model = DecisionTreeClassifier()
+    model.fit(X_train, y_train)
+    
+    print("Accuracy (Traditional ML):", model.score(X_test, y_test))
+    
 Deep Learning – طبقه‌بندی همان داده‌ها با شبکه عصبی ساده
 
-import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
-from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
-
-data = load_iris()
-X_train, X_test, y_train, y_test = train_test_split(data.data, data.target, test_size=0.2)
-
-model = Sequential([
-    Dense(10, activation='relu', input_shape=(4,)),
-    Dense(3, activation='softmax')
-])
-
-model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-model.fit(X_train, y_train, epochs=100, verbose=0)
-
-loss, acc = model.evaluate(X_test, y_test, verbose=0)
-print("Accuracy (Deep Learning):", acc)
+    import tensorflow as tf
+    from tensorflow.keras.models import Sequential
+    from tensorflow.keras.layers import Dense
+    from sklearn.datasets import load_iris
+    from sklearn.model_selection import train_test_split
+    
+    data = load_iris()
+    X_train, X_test, y_train, y_test = train_test_split(data.data, data.target, test_size=0.2)
+    
+    model = Sequential([
+        Dense(10, activation='relu', input_shape=(4,)),
+        Dense(3, activation='softmax')
+    ])
+    
+    model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+    model.fit(X_train, y_train, epochs=100, verbose=0)
+    
+    loss, acc = model.evaluate(X_test, y_test, verbose=0)
+    print("Accuracy (Deep Learning):", acc)
 
 🧠 چه زمانی Traditional و چه زمانی Deep Learning؟
 شرایط شما	توصیه
