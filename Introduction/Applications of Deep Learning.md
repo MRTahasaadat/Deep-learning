@@ -1,6 +1,9 @@
 Applications of Deep Learning
+
 (کاربردهای یادگیری عمیق در دنیای واقعی)
-📷 1. بینایی ماشین (Computer Vision)
+
+ 1. بینایی ماشین (Computer Vision)
+
 
    Object detection, face recognition, image captioning
   
