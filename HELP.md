@@ -1,8 +1,8 @@
-"""Deep-Learning-Tutorial/
+Deep-Learning-Tutorial/
 │
 ├── 01_Introduction/
-│   ├── README.md              ← توضیحات مفهومی به صورت Markdown (دوزبانه)
-│   └── 01_Introduction.ipynb  ← کدهای آموزشی در Jupyter Notebook (دوزبانه)
+│   ├── README.md             
+│   └── 01_Introduction.ipynb  
 │
 ├── 02_Artificial_Neuron/
 │   ├── README.md
@@ -44,5 +44,4 @@
 │   ├── README.md
 │   └── 11_Project_Image_Classification.ipynb
 │
-└── README.md   ← نمای کلی کل پروژه
-""""
+└── README.md   
