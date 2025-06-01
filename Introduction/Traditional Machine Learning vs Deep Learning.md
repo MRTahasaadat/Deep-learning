@@ -40,6 +40,9 @@ Traditional ML – طبقه‌بندی با استفاده از ویژگی‌ه�
     model.fit(X_train, y_train)
     
     print("Accuracy (Traditional ML):", model.score(X_test, y_test))
+output
+
+    output -->Accuracy (Traditional ML): 1.0
     
 Deep Learning – طبقه‌بندی همان داده‌ها با شبکه عصبی ساده
 
@@ -62,6 +65,10 @@ Deep Learning – طبقه‌بندی همان داده‌ها با شبکه ع�
     
     loss, acc = model.evaluate(X_test, y_test, verbose=0)
     print("Accuracy (Deep Learning):", acc)
+
+output
+
+    output -->Accuracy (Deep Learning): 0.800000011920929
 
  چه زمانی Traditional و چه زمانی Deep Learning؟
  
