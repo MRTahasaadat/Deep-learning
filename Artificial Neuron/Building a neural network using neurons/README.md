@@ -1,19 +1,25 @@
 نورون‌ها چگونه شبکه عصبی می‌سازند؟
+
 How Neurons Form Neural Networks
+
  1. نورون به‌تنهایی چیست؟
 
-     A neuron is a simple computational unit that receives inputs, weights them, sums, and produces an output.
+A neuron is a simple computational unit that receives inputs, weights them, sums, and produces an output.
     
-     نورون یک واحد محاسباتی ساده است که ورودی‌ها را دریافت و با وزن‌دهی و جمع‌بندی آنها، خروجی تولید می‌کند.
+ نورون یک واحد محاسباتی ساده است که ورودی‌ها را دریافت و با وزن‌دهی و جمع‌بندی آنها، خروجی تولید می‌کند.
+
 
 فرمول نورون:
+
 y=f(∑i=1nwixi+b)
 y=f(i=1∑n​wi​xi​+b)
- 2. ساختن لایه از نورون‌ها
+ 
+2. ساختن لایه از نورون‌ها
 
- Multiple neurons arranged side by side form a layer. Each neuron receives the same inputs but has its own weights and bias.
+Multiple neurons arranged side by side form a layer. Each neuron receives the same inputs but has its own weights and bias.
+
     
-  وقتی چند نورون کنار هم قرار می‌گیرند، یک لایه (Layer) ساخته می‌شود. هر نورون ورودی‌های مشابهی دریافت می‌کند ولی وزن‌ها و بایاس‌های خاص خودش را دارد.
+ وقتی چند نورون کنار هم قرار می‌گیرند، یک لایه (Layer) ساخته می‌شود. هر نورون ورودی‌های مشابهی دریافت می‌کند ولی وزن‌ها و بایاس‌های خاص خودش را دارد.
 
 مثال ساده:
 
@@ -42,18 +48,20 @@ y=f(i=1∑n​wi​xi​+b)
       
       print("Layer output:", output)
       
-       توضیح:
+ 
+  توضیح:
 
-    ورودی XX به همه نورون‌ها ارسال می‌شود
+ ورودی XX به همه نورون‌ها ارسال می‌شود
 
-    هر نورون وزن‌های خود را دارد و خروجی مخصوص به خود را تولید می‌کند
+ هر نورون وزن‌های خود را دارد و خروجی مخصوص به خود را تولید می‌کند
 
-    خروجی لایه، یک آرایه با اندازه تعداد نورون‌ها است
+ خروجی لایه، یک آرایه با اندازه تعداد نورون‌ها است
 
  3. اتصال لایه‌ها: شکل‌گیری شبکه
 
 
      The output of one layer becomes the input to the next layer. Stacking layers forms a neural network.
+    
     
      خروجی یک لایه، ورودی لایه بعدی می‌شود. با این روش چند لایه پشت سر هم شبکه عصبی (Neural Network) ساخته می‌شود.
 
@@ -124,3 +132,15 @@ output
     ])
     
     model.summary()
+
+4.نورون‌ها چگونه شبکه می‌سازند؟
+
+
+ A neuron processes inputs; many neurons form a layer. Layers stack to form a neural network
+ 
+  یک نورون اطلاعات را دریافت و پردازش می‌کند؛ چند نورون در کنار هم، یک لایه می‌سازند. چند لایه پشت سر هم، یک شبکه عصبی را شکل می‌دهند.
+
+
+ساختار پایه شبکه عصبی:
+
+     ورودی ← [ نورون ۱ | نورون ۲ | نورون ۳ ] ← لایه مخفی ← نورون خروجی
