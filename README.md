@@ -45,7 +45,7 @@ Each chapter is organized as a folder with:
 08_Convolutional_Neural_Networks/    ← شبکه‌های عصبی پیچشی (CNN)
 09_Recurrent_Neural_Networks/        ← شبکه‌های عصبی بازگشتی (RNN)
 10_Transfer_Learning/                ← یادگیری انتقالی
-11_Project_Image_Classification/     ← پروژه عملی: طبقه‌بندی تصویر
+11_Project/     ← پروژه عملی
 
 ⚙️ Technologies Used | تکنولوژی‌ها
 
