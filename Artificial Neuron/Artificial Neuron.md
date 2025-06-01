@@ -1,10 +1,15 @@
 1. مقدمه‌ای بر نورون بیولوژیکی (Biological Inspiration)
+ 
+ 
  الهام از مغز انسان
 
-     Artificial Neural Networks are inspired by the structure and function of the human brain.
-     شبکه‌های عصبی مصنوعی از ساختار مغز انسان الهام گرفته شده‌اند.
+   Artificial Neural Networks are inspired by the structure and function of the human brain.
+     
+   شبکه‌های عصبی مصنوعی از ساختار مغز انسان الهام گرفته شده‌اند.
 
- نورون بیولوژیکی چگونه کار می‌کند؟
+
+نورون بیولوژیکی چگونه کار می‌کند؟
+ 
 
 یک نورون طبیعی در مغز دارای اجزای زیر است:
 
