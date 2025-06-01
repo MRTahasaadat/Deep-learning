@@ -61,6 +61,7 @@ $$f(z)=max(0,z)$$
 ❌ مشکل "مرگ نورون" (Dead Neurons) – اگر ورودی همیشه منفی باشد، نورون خاموش می‌ماند
 
 5. Leaky ReLU
+
  $$f(z) =\begin{cases}z & \text{if } z \geq 0 \\\\\alpha z & \text{if } z < 0 \quad (\alpha \approx 0.01)\end{cases}$$
 
 ✅ حل مشکل مرگ نورون در ReLU
