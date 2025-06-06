@@ -84,8 +84,8 @@ Multiple neurons arranged side by side form a layer. Each neuron receives the sa
     from tensorflow.keras.layers import Dense
     
     model = Sequential([
-        Dense(4, input_shape=(3,), activation='relu'),  # لایه پنهان با 4 نورون
-        Dense(1, activation='sigmoid')                   # لایه خروجی با 1 نورون
+        Dense(4, input_shape=(3,), activation='relu'),  
+        Dense(1, activation='sigmoid')                  
     ])
     
     model.summary()
