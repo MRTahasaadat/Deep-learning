@@ -351,3 +351,118 @@ No simple Python example here, but often used in SVM libraries
 که yiyi​ برچسب واقعی است که مقدار آن -1 یا +1 است.
 
 توضیح: جریمه می‌کند پیش‌بینی‌هایی که با اطمینان کافی درست نیستند.
+
+Learning Process and Weight Update
+
+مفهوم یادگیری و به‌روزرسانی وزن‌ها 
+---
+What is Learning in Neural Networks?
+
+یادگیری در شبکه‌های عصبی چیست؟
+
+Learning in neural networks refers to the process of adjusting the model’s weights to reduce prediction error. The model learns by comparing its prediction to the actual output and using that error to update its internal parameters.
+
+
+یادگیری در شبکه‌های عصبی به فرآیند تنظیم وزن‌های مدل برای کاهش خطای پیش‌بینی گفته می‌شود. مدل با مقایسه خروجی پیش‌بینی شده با مقدار واقعی و به‌روزرسانی وزن‌ها بر اساس خطا، به مرور بهتر می‌شود.
+
+ Step-by-Step Learning Process
+
+  مراحل یادگیری گام‌به‌گام
+
+  
+ 1. Initialization of Weights
+
+At the beginning, the weights of the network are randomly initialized (usually small numbers).
+
+در ابتدای کار، وزن‌های شبکه به‌صورت تصادفی مقداردهی اولیه می‌شوند (معمولاً مقادیر کوچک).
+
+    import numpy as np
+    weights = np.random.randn(3) * 0.01
+
+
+ 2. Forward Pass
+
+    Input data is passed through the network to generate predictions.
+    
+ داده ورودی از طریق شبکه عبور می‌کند تا خروجی یا پیش‌بینی تولید شود.
+
+    def forward(x, weights):
+        return np.dot(x, weights)
+
+
+ 3. Compute Loss
+
+The loss function calculates how far the prediction is from the actual target.
+
+ تابع خطا مشخص می‌کند که خروجی چقدر با مقدار واقعی تفاوت دارد.
+
+    def loss(y_true, y_pred):
+       return (y_true - y_pred) ** 2  # MSE ساده
+
+
+ 4. Backward Pass
+
+Use calculus (derivatives) to compute how much each weight contributed to the error. This is the gradient.
+
+ با استفاده از مشتق‌گیری مشخص می‌شود که هر وزن چقدر در خطا نقش داشته است. به این مقدار گرادیان گفته می‌شود.
+
+    def gradient(x, y_true, y_pred):
+        return -2 * x * (y_true - y_pred)
+
+
+ 5. Update Weight
+
+ We adjust the weights in the opposite direction of the gradient to reduce error.
+ 
+ وزن‌ها در جهت مخالف گرادیان به‌روزرسانی می‌شوند تا خطا کاهش یابد.
+     
+     
+     learning_rate = 0.01
+     weights = weights - learning_rate * grad
+     
+Simple Learning Example
+     
+     x = np.array([2.0, 3.0])
+     y_true = 13.0  # چون 2*2 + 3*3 = 4 + 9 = 13
+     
+     weights = np.random.randn(2) * 0.01
+     learning_rate = 0.1
+     
+     for epoch in range(100):
+         y_pred = np.dot(x, weights)
+         error = y_true - y_pred
+         grad = -2 * x * error
+         weights -= learning_rate * grad
+     
+         if epoch % 10 == 0:
+             print(f"Epoch {epoch}: y_pred = {y_pred:.4f}, loss = {error**2:.4f}")
+     
+     print("Weights after training:", weights)
+
+
+ tensorflow
+     
+      import tensorflow as tf
+     
+     x = tf.constant([2.0, 3.0])  # x1 = 2, x2 = 3
+     y_true = tf.constant(13.0)   # هدف: 2*2 + 3*3 = 13
+     
+     weights = tf.Variable(tf.random.normal([2]), name="weights")
+     
+     learning_rate = 0.1
+     
+     for epoch in range(100):
+         with tf.GradientTape() as tape:
+             y_pred = tf.reduce_sum(x * weights)
+             loss = tf.square(y_true - y_pred)
+     
+         gradients = tape.gradient(loss, [weights])
+     
+         weights.assign_sub(learning_rate * gradients[0])
+     
+         if epoch % 10 == 0:
+             print(f"Epoch {epoch}: y_pred = {y_pred.numpy():.4f}, loss = {loss.numpy():.4f}")
+     
+     print("Weights after training:", weights.numpy())
+
+     
