@@ -466,3 +466,97 @@ Simple Learning Example
      print("Weights after training:", weights.numpy())
 
      
+Backpropagation 
+
+پس‌انتشار خطا
+
+
+ What is Backpropagation?
+
+Backpropagation is an algorithm used to calculate the gradients of the loss function with respect to each weight in the network. These gradients are used to update the weights using Gradient Descent.
+
+«پس‌انتشار» الگوریتمی برای محاسبه گرادیان‌های وزن‌ها در یک شبکه عصبی است. این گرادیان‌ها برای به‌روزرسانی وزن‌ها (با استفاده از Gradient Descent یا روش‌های مشابه) استفاده می‌شوند.
+
+مراحل کلی الگوریتم Backpropagation
+    
+    | گام | مرحله                | شرح فارسی                             | English Description                          |
+    | --- | -------------------- | ------------------------------------- | -------------------------------------------- |
+    | 1️⃣ | **Forward Pass**     | عبور داده از شبکه و محاسبه خروجی      | Pass input through network to get prediction |
+    | 2️⃣ | **Loss Computation** | محاسبه خطا بین خروجی واقعی و پیش‌بینی | Calculate loss                               |
+    | 3️⃣ | **Backward Pass**    | محاسبه گرادیان خطا نسبت به وزن‌ها     | Compute gradients of loss w\.r.t. weights    |
+    | 4️⃣ | **Update Weights**   | اصلاح وزن‌ها با گرادیان               | Update weights using optimizer               |
+
+
+ مثالی با فرمول ریاضی برای یک نورون ساده
+
+فرض کنیم:
+
+   ورودی: $$xx$$
+
+   وزن: $$ww$$
+
+   بایاس: $$bb$$
+
+   خروجی: $$y^=σ(wx+b)y^​=σ(wx+b)$$
+
+   تابع خطا: Mean Squared Error (MSE)
+
+گام‌های ریاضی:
+
+1.Forward Pass:
+
+
+$$z = w x + b \quad ; \quad \hat{y} = \sigma(z)$$
+
+2. Loss Function:
+
+$$L = \frac{1}{2} (y - \hat{y})^2$$
+
+3. Gradient of Loss w.r.t. output:
+
+$$\frac{\partial L}{\partial \hat{y}} = \hat{y} - y$$
+
+
+4. Chain Rule:
+
+
+$$\frac{\partial L}{\partial w} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial z} \cdot \frac{\partial z}{\partial w}
+= (\hat{y} - y) \cdot \sigma'(z) \cdot x$$
+
+
+چرا Chain Rule؟
+
+Backpropagation به‌شدت بر قانون زنجیره‌ای در مشتق‌گیری (chain rule in calculus) متکی است:
+
+$$\frac{\partial L}{\partial w} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial z} \cdot \frac{\partial z}{\partial w}$$
+
+این یعنی گرادیان نهایی از توزیع خطا به عقب، از لایه خروجی تا لایه‌های قبلی پخش می‌شود — که اسمش شده back-propagation!
+
+
+جمع‌بندی تصویری مراحل Backpropagation
+
+
+    Input (x)
+       ↓
+    [ Weighted Sum: z = wx + b ]
+       ↓
+    [ Activation: ŷ = σ(z) ]
+       ↓
+    [ Loss: L(y, ŷ) ]
+       ↑
+    [ Backward: dL/dw, dL/db ]
+       ↑
+    [ Update weights ]
+
+
+
+
+
+
+
+
+
+
+
+
+
