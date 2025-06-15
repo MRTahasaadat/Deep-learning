@@ -13,6 +13,7 @@ They consist of layers of artificial neurons that process input data to learn pa
 این شبکه‌ها از لایه‌هایی از نورون‌های مصنوعی تشکیل شده‌اند که ورودی را پردازش می‌کنند تا الگوها را یاد بگیرند و تصمیم یا پیش‌بینی انجام دهند.
 
 1. Components of a Neural Network
+ 
 
 1. اجزای اصلی یک شبکه عصبی
 
