@@ -3,9 +3,12 @@
 
 The basic Perceptron is a single-layer model that can only solve linearly separable problems.
 
+
 در ساده‌ترین حالت، Perceptron یک مدل یادگیری ماشین است که تنها یک لایه خروجی دارد و قادر است تنها مسائل خطی‌قابل‌تفکیک (linearly separable) را حل کند.
 
+
 The Multi-Layer Perceptron (MLP) includes:
+
 
 اما Multi-Layer Perceptron یا MLP شامل:
 
