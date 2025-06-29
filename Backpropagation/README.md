@@ -81,10 +81,18 @@ $$\frac{d w}{d L} = \frac{d a}{d L} \cdot \frac{d z}{d a} \cdot \frac{d w}{d z}$
 
 فرمول Backpropagation برای لایه Dense
 
-فرض کنید داریم یک لایه با وزن$$WW$$و بایاس $$bb$$:
+فرض کنید داریم یک لایه با
+وزن
+$$WW$$
+و بایاس 
+
+$$bb$$:
+
 $$z = W \cdot x + b, \quad a = \sigma(z), \quad \hat{y} = a, \quad L = \text{loss}(\hat{y}, y)$$
 
+
 گام‌های محاسبه گرادیان:
+
 
    مشتق تابع خطا نسبت به خروجی لایه:
    
