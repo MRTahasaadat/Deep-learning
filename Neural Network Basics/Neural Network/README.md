@@ -38,13 +38,14 @@
 📘 توضیح کد
 آماده‌سازی داده‌ها
 
-(x_train, y_train), (x_test, y_test) = mnist.load_data()
-x_train = x_train.astype('float32') / 255.0
-x_test = x_test.astype('float32') / 255.0
-x_train = x_train.reshape(-1, 784)
-x_test = x_test.reshape(-1, 784)
+    (x_train, y_train), (x_test, y_test) = mnist.load_data()
+    x_train = x_train.astype('float32') / 255.0
+    x_test = x_test.astype('float32') / 255.0
+    x_train = x_train.reshape(-1, 784)
+    x_test = x_test.reshape(-1, 784)
 
-    داده‌های MNIST به صورت 28x28 پیکسل هستند. آن‌ها را نرمال‌سازی و صاف (flatten) می‌کنیم.
+
+داده‌های MNIST به صورت 28x28 پیکسل هستند. آن‌ها را نرمال‌سازی و صاف (flatten) می‌کنیم.
 
 y_train_ohe = to_categorical(y_train, 10)
 
@@ -52,35 +53,35 @@ y_train_ohe = to_categorical(y_train, 10)
 
 ساخت مدل به صورت دستی
 
-W1 = tf.Variable(tf.random.normal([784, 128], stddev=0.1))
-b1 = tf.Variable(tf.zeros([128]))
-W2 = tf.Variable(tf.random.normal([128, 10], stddev=0.1))
-b2 = tf.Variable(tf.zeros([10]))
+    W1 = tf.Variable(tf.random.normal([784, 128], stddev=0.1))
+    b1 = tf.Variable(tf.zeros([128]))
+    W2 = tf.Variable(tf.random.normal([128, 10], stddev=0.1))
+    b2 = tf.Variable(tf.zeros([10]))
 
-    تعریف وزن‌ها و بایاس‌ها با مقداردهی اولیه مناسب
+ تعریف وزن‌ها و بایاس‌ها با مقداردهی اولیه مناسب
 
 حلقه آموزش (Training Loop)
 
-with tf.GradientTape() as tape:
-    ...
-    loss = tf.reduce_mean(tf.keras.losses.categorical_crossentropy(y_batch, y_pred))
+    with tf.GradientTape() as tape:
+        ...
+        loss = tf.reduce_mean(tf.keras.losses.categorical_crossentropy(y_batch, y_pred))
 
-    با استفاده از GradientTape گرادیان‌ها را نسبت به وزن‌ها محاسبه می‌کنیم.
+ با استفاده از GradientTape گرادیان‌ها را نسبت به وزن‌ها محاسبه می‌کنیم.
 
-    سپس وزن‌ها را با یادگیری نرخ 0.01 به‌روزرسانی می‌کنیم.
+سپس وزن‌ها را با یادگیری نرخ 0.01 به‌روزرسانی می‌کنیم.
 
 رسم نمودار تابع هزینه
 
-plt.plot(loss_history)
+    plt.plot(loss_history)
 
-    کاهش loss در هر epoch را برای بررسی عملکرد مدل نمایش می‌دهیم.
+ کاهش loss در هر epoch را برای بررسی عملکرد مدل نمایش می‌دهیم.
 
 ارزیابی روی داده‌های تست
 
-correct_preds = tf.equal(tf.argmax(y_pred, axis=1), tf.argmax(y_test_ohe, axis=1))
-accuracy = tf.reduce_mean(tf.cast(correct_preds, tf.float32))
+    correct_preds = tf.equal(tf.argmax(y_pred, axis=1), tf.argmax(y_test_ohe, axis=1))
+    accuracy = tf.reduce_mean(tf.cast(correct_preds, tf.float32))
 
-    مقایسه پیش‌بینی مدل با لیبل‌های واقعی و محاسبه دقت
+ مقایسه پیش‌بینی مدل با لیبل‌های واقعی و محاسبه دقت
 
 📈 نتایج نمونه
 
