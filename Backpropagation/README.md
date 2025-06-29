@@ -78,3 +78,31 @@ $$\frac{d w}{d L} = \frac{d a}{d L} \cdot \frac{d z}{d a} \cdot \frac{d w}{d z}$
   </tbody>
 </table>
 
+
+فرمول Backpropagation برای لایه Dense
+
+فرض کنید داریم یک لایه با وزن$$WW$$و بایاس $$bb$$:
+$$z = W \cdot x + b, \quad a = \sigma(z), \quad \hat{y} = a, \quad L = \text{loss}(\hat{y}, y)$$
+
+گام‌های محاسبه گرادیان:
+
+   مشتق تابع خطا نسبت به خروجی لایه:
+   $$\frac{\partial L}{\partial \hat{y}} \quad \text{و} \quad \frac{\partial \hat{y}}{\partial L}$$
+
+   
+   ضرب در مشتق تابع فعال‌سازی:
+  $$\delta = \frac{\partial L}{\partial \hat{y}} \cdot \sigma'(z)$$
+
+   
+   مشتق نسبت به وزن:
+   $$\frac{\partial L}{\partial W} = \delta \cdot x^T$$
+
+   مشتق نسبت به بایاس:
+$$\frac{\partial L}{\partial b} = \delta$$
+
+
+ مقدار گرادیان برای لایه قبلی:
+$$\delta_{\text{prev}} = W^T \cdot \delta$$
+
+
+
