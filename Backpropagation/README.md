@@ -51,44 +51,29 @@ $$\frac{d w}{d L} = \frac{d a}{d L} \cdot \frac{d z}{d a} \cdot \frac{d w}{d z}$
   <tbody>
     <tr>
       <td><strong>Sigmoid</strong></td>
-      <td>σ(x) = 1 / (1 + e<sup>−x</sup>)</td>
-      <td>σ(x) × (1 − σ(x))</td>
+      <td><code>\sigma(x) = \frac{1}{1 + e^{-x}}</code></td>
+      <td><code>\sigma'(x) = \sigma(x)(1 - \sigma(x))</code></td>
     </tr>
     <tr>
       <td><strong>Tanh</strong></td>
-      <td>tanh(x) = (e<sup>x</sup> − e<sup>−x</sup>) / (e<sup>x</sup> + e<sup>−x</sup>)</td>
-      <td>1 − tanh(x)<sup>2</sup></td>
+      <td><code>\tanh(x) = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}}</code></td>
+      <td><code>1 - \tanh^2(x)</code></td>
     </tr>
     <tr>
       <td><strong>ReLU</strong></td>
-      <td>f(x) = max(0, x)</td>
-      <td>
-        f′(x) = 
-        <span style="white-space: nowrap;">
-          {
-          1 if x &gt; 0,
-          0 if x ≤ 0
-          }
-        </span>
-      </td>
+      <td><code>f(x) = \max(0, x)</code></td>
+      <td><code>f'(x) = \begin{cases} 1 & x > 0 \\ 0 & x \leq 0 \end{cases}</code></td>
     </tr>
     <tr>
       <td><strong>Leaky ReLU</strong></td>
-      <td>f(x) = max(αx, x)</td>
-      <td>
-        f′(x) = 
-        <span style="white-space: nowrap;">
-          {
-          1 if x &gt; 0,
-          α if x ≤ 0
-          }
-        </span>
-      </td>
+      <td><code>f(x) = \max(\alpha x, x)</code></td>
+      <td><code>f'(x) = \begin{cases} 1 & x > 0 \\ \alpha & x \leq 0 \end{cases}</code></td>
     </tr>
     <tr>
       <td><strong>Softmax</strong></td>
-      <td>softmax(xᵢ) = e<sup>xᵢ</sup> / ∑ e<sup>xⱼ</sup></td>
-      <td>Jacobian matrix – often combined with CrossEntropy</td>
+      <td><code>\text{softmax}(x_i) = \frac{e^{x_i}}{\sum_j e^{x_j}}</code></td>
+      <td>Complex (Jacobian matrix) – often combined with CrossEntropy</td>
     </tr>
   </tbody>
 </table>
+
