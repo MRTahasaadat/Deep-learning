@@ -33,9 +33,9 @@ where
 
 $$\sigma'\big(z^{(l)}\big)$$
 
-   is derivative of activation at layer ll.
+   is derivative of activation at layer $$l$$.
 
-مشتق تابع فعال‌سازی لایه ll است.
+مشتق تابع فعال‌سازی لایه $$l$$ است.
 
 This formula recursively distributes the error backward.
 
