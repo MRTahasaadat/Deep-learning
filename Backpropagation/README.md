@@ -21,15 +21,16 @@ Let’s consider:
 
  final loss :
 
-    $$LL$$
+    $$ LL $$
 
 a linear operation:
 
-    $$z=w⋅x+bz=w⋅x+b$$ 
+    $$z = w \cdot x + b$$
+
 
 activation: 
 
-    $$a=σ(z)a=σ(z)$$
+    $$a = \sigma(z)$$
     
 
 Then:    
