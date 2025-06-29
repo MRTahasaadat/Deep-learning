@@ -19,11 +19,11 @@ to update each layer’s weights, we need the derivative of the loss with respec
 در شبکه‌های عصبی چندلایه، تابع خطا (Loss) به وزن‌های چندین لایه وابسته است. بنابراین برای اینکه وزن‌های هر لایه به درستی به‌روزرسانی شوند، باید مشتق تابع خطا نسبت به آن وزن‌ها را داشته باشیم. اینجا دقیقاً جایی‌ست که قانون زنجیره‌ای مشتق‌گیری وارد عمل می‌شود.
 Let’s consider:
 
-    LL: final loss
+    $$LL$$: final loss
 
-    z=w⋅x+bz=w⋅x+b: a linear operation
+    $$z=w⋅x+bz=w⋅x+b$$ : a linear operation
 
-    a=σ(z)a=σ(z): activation
+    $$a=σ(z)a=σ(z)$$: activation
 
 Then:    
     
