@@ -1,6 +1,7 @@
 Error at Output Layer
 
 محاسبه خطا در خروجی
+
 At the output layer, the first step in Backpropagation is to compute the error — the difference between the predicted value $$y^$$ and the true label 
 
 در لایه خروجی، اولین قدم در پراپگیشن به عقب، محاسبه خطا یا تفاوت بین مقدار پیش‌بینی شده y^y^​ و مقدار واقعی yy است:
@@ -26,7 +27,7 @@ $$\delta^{(l)} = \left(W^{(l+1)}\right)^T \delta^{(l+1)} \odot \sigma'\big(z^{(l
 
 where
 
-  \( \odot \) is element-wise multiplication,
+ $$\odot$$ is element-wise multiplication,
 
 $$\sigma'\big(z^{(l)}\big)$$
 
