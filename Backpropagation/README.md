@@ -24,9 +24,10 @@ Let’s consider:
     z=w⋅x+bz=w⋅x+b: a linear operation
 
     a=σ(z)a=σ(z): activation
-    Then:
+
+Then:    
     
-    $$\frac{d w}{d L} = \frac{d a}{d L} \cdot \frac{d z}{d a} \cdot \frac{d w}{d z}$$
+$$\frac{d w}{d L} = \frac{d a}{d L} \cdot \frac{d z}{d a} \cdot \frac{d w}{d z}$$
 
   
   مشتق‌گیری از توابع فعال‌سازی معروف
