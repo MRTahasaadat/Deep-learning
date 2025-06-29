@@ -87,6 +87,7 @@ $$\frac{d w}{d L} = \frac{d a}{d L} \cdot \frac{d z}{d a} \cdot \frac{d w}{d z}$
 
 
 $$WW$$
+
 و بایاس 
 
 $$bb$$
