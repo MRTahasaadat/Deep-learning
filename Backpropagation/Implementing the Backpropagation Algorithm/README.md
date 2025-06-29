@@ -2,9 +2,9 @@ Error at Output Layer
 
 محاسبه خطا در خروجی
 
-At the output layer, the first step in Backpropagation is to compute the error — the difference between the predicted value $$y^$$ and the true label $$y$$ .
+At the output layer, the first step in Backpropagation is to compute the error — the difference between the predicted value y^ and the true label y.
 
-در لایه خروجی، اولین قدم در پراپگیشن به عقب، محاسبه خطا یا تفاوت بین مقدار پیش‌بینی شده $$y^$$​ و مقدار واقعی $$y$$ است:
+در لایه خروجی، اولین قدم در پراپگیشن به عقب، محاسبه خطا یا تفاوت بین مقدار پیش‌بینی شدهy^​ و مقدار واقعی y است:
 
 $$y$$
 
