@@ -29,9 +29,14 @@ where
 
  $$\odot$$ is element-wise multiplication,
 
+ضرب عنصر به عنصر است، $$\odot$$
+
 $$\sigma'\big(z^{(l)}\big)$$
 
    is derivative of activation at layer ll.
 
+مشتق تابع فعال‌سازی لایه ll است.
+
 This formula recursively distributes the error backward.
 
+این معادله خطا را به صورت بازگشتی به عقب هدایت می‌کند.
