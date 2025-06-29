@@ -21,7 +21,7 @@ Let’s consider:
 
  final loss :
 
-   $$ LL $$
+   $$ L $$
 
 a linear operation:
 
@@ -86,11 +86,11 @@ $$\frac{d w}{d L} = \frac{d a}{d L} \cdot \frac{d z}{d a} \cdot \frac{d w}{d z}$
 وزن
 
 
-$$WW$$
+$$W$$
 
 و بایاس 
 
-$$bb$$
+$$b$$
 
 $$z = W \cdot x + b, \quad a = \sigma(z), \quad \hat{y} = a, \quad L = \text{loss}(\hat{y}, y)$$
 
