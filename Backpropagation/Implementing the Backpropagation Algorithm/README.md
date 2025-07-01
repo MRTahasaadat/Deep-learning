@@ -40,3 +40,13 @@ $$\sigma'\big(z^{(l)}\big)$$
 This formula recursively distributes the error backward.
 
 این معادله خطا را به صورت بازگشتی به عقب هدایت می‌کند.
+
+
+Gradient checking is a method to verify the correctness of your backpropagation implementation. It compares the analytically computed gradient with a numerical approximation using finite differences.
+
+Given a parameter θθ, approximate the derivative by:
+
+
+
+
+Where ϵϵ is a very small number (e.g., 10−710−7).
