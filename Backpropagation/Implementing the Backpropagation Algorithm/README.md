@@ -50,3 +50,28 @@ Given a parameter θθ, approximate the derivative by:
 
 
 Where ϵϵ is a very small number (e.g., 10−710−7).
+
+
+بررسی درست بودن گرادیان با تست گرادیان (Gradient Checking)
+
+
+Gradient checking is a method to verify the correctness of your backpropagation implementation. It compares the analytically computed gradient with a numerical approximation using finite differences.
+
+Given a parameter $$θ$$, approximate the derivative by:
+
+
+تست گرادیان یک روش برای صحت‌سنجی پیاده‌سازی Backpropagation است. در این روش، گرادیان محاسبه شده به صورت تحلیلی با گرادیان عددی که از مشتق محدود (finite difference) به دست می‌آید مقایسه می‌شود.
+
+برای پارامتر θθ، مشتق عددی به صورت زیر محاسبه می‌شود:
+
+$$\frac{\partial L}{\partial \theta} \approx \frac{L(\theta + \epsilon) - L(\theta - \epsilon)}{2\epsilon}$$
+
+
+Where ϵϵ is a very small number (e.g., 10−710−7).
+
+که ϵϵ یک عدد بسیار کوچک است (مثلاً 10−710−7).
+
+If the numerical gradient is close to analytical gradient, your backpropagation is likely correct.
+
+اگر مقدار عددی نزدیک به مقدار تحلیلی باشد، پیاده‌سازی شما درست است.
+
