@@ -98,3 +98,13 @@ Training becomes unstable or the model fails to learn.
 نتیجه:
 
 یادگیری مختل می‌شود و مدل یا اصلاً یاد نمی‌گیرد یا ناپایدار می‌شود.
+
+ راه‌حل‌ها / Solutions:
+
+    استفاده از ReLU و He Initialization
+
+    Normalization (BatchNorm)
+
+    Residual Connections (در شبکه‌های ResNet)
+
+    Gradient Clipping: محدودسازی مقدار گرادیان
