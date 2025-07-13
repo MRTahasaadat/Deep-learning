@@ -23,6 +23,7 @@ L2 Regularization: $$λ∑w2λ∑w2$$
 2. Dropout:
 
 Randomly deactivate neurons during training.
+
 در هر تکرار آموزشی، برخی نورون‌ها را به طور تصادفی غیرفعال می‌کنیم تا از وابستگی زیاد به برخی مسیرها جلوگیری شود.
 
 3. Early Stopping:
