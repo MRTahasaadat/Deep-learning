@@ -1,0 +1,100 @@
+Underfitting & Overfitting 
+
+Overfitting(بیش‌برازش):
+
+The model fits the training data too well but fails to generalize on new or unseen data. High training accuracy but low testing accuracy.
+
+مدل بیش از حد خودش را با داده‌های آموزشی تطبیق داده است و نمی‌تواند تعمیم خوبی روی داده‌های جدید یا دیده‌نشده داشته باشد. نشانه‌ی آن دقت بسیار بالا در داده آموزش و دقت پایین در تست است.
+
+Underfitting(کم‌برازش):
+
+The model is too simple and fails to capture the underlying patterns of the data. Low training and testing accuracy
+
+مدل نتوانسته روابط بین ویژگی‌ها و برچسب‌ها را در داده‌های آموزش یاد بگیرد. در نتیجه، دقت در هر دو مجموعه آموزش و تست پایین است.
+
+ روش‌های مقابله با Overfitting
+
+1. Regularization (نرمال‌سازی):
+   
+L1 Regularization: $$λ∑∣w∣λ∑∣w∣$$
+
+L2 Regularization: $$λ∑w2λ∑w2$$
+
+2. Dropout:
+
+Randomly deactivate neurons during training.
+در هر تکرار آموزشی، برخی نورون‌ها را به طور تصادفی غیرفعال می‌کنیم تا از وابستگی زیاد به برخی مسیرها جلوگیری شود.
+
+3. Early Stopping:
+
+Stop training when validation error starts increasing.
+
+   آموزش مدل را زمانی متوقف می‌کنیم که خطای مجموعه اعتبارسنجی شروع به افزایش کند.
+
+4.Data Augmentation (افزایش داده):
+
+Create synthetic training data using transformations like rotation, flipping, etc.
+
+تکنیک‌هایی برای ساخت داده‌های مصنوعی (چرخش، برش، وارونه‌سازی تصویر و غیره).
+
+
+ Initialization Strategies (استراتژی‌های مقداردهی اولیه وزن‌ها)
+
+ Proper initialization is crucial to ensure gradients don’t vanish or explode.
+
+ مقداردهی اولیه وزن‌ها اهمیت بسیار زیادی دارد چون اگر اشتباه انجام شود، مدل ممکن است یاد نگیرد یا دچار نوسان شدید شود.
+
+ Popular Methods:
+
+ انواع معروف:
+
+ Zeros Initialization:
+
+ All weights = 0 → symmetry problem
+
+ همه وزن‌ها صفر = شکست کامل یادگیری (همه نورون‌ها یکسان رفتار می‌کنند)
+
+ Random Initialization:
+
+ Small random values, prone to instability
+
+ انتخاب تصادفی مقادیر کوچک = قابل قبول، ولی ممکن است باعث گرادیان‌های ناپایدار شود.
+
+ Xavier Initialization (Glorot):
+ 
+Good for sigmoid/tanh
+
+مناسب برای توابع فعال‌سازی مثل sigmoid و tanh
+
+              فرمول
+            
+
+He Initialization:
+
+Designed for ReLU
+
+مخصوص ReLU و مشتقات آن
+
+                  فرمول
+
+Gradient Vanishing / Exploding Problem
+
+In deep networks, gradients during backpropagation may:
+
+    Shrink too much → Vanishing gradient
+
+    Grow too much → Exploding gradient
+
+
+در شبکه‌های عمیق، در هنگام backpropagation ممکن است گرادیان‌ها:
+
+    کوچک‌تر و کوچک‌تر شوند → مشکل vanishing gradient
+
+    بزرگ‌تر و بزرگ‌تر شوند → مشکل exploding gradient
+    
+Result:
+
+Training becomes unstable or the model fails to learn.
+نتیجه:
+
+یادگیری مختل می‌شود و مدل یا اصلاً یاد نمی‌گیرد یا ناپایدار می‌شود.
