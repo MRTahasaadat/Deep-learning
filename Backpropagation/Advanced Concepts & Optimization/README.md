@@ -135,7 +135,7 @@ Training becomes unstable or the model fails to learn.
       <td>سریع، مطمئن، مناسب پروژه‌های واقعی</td>
       <td>پنهان شدن جزئیات الگوریتم</td>
     </tr>
-  </
+  
 
 
 
