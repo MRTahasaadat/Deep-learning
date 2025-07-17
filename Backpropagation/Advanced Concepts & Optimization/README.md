@@ -137,37 +137,43 @@ Training becomes unstable or the model fails to learn.
     </tr>
   </
 
+
+
+
+
 بهینه‌سازی گرادیان‌ها با Optimizerها
 
-<table>
-  <thead>
-    <tr>
-      <th>Optimizer</th>
-      <th>فرمول کلی</th>
-      <th>ویژگی‌ها</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>SGD (Stochastic Gradient Descent)</strong></td>
-      <td>θ ← θ − η ∇J(θ)</td>
-      <td>ساده، ممکن است نوسان داشته باشد</td>
-    </tr>
-    <tr>
-      <td><strong>Momentum</strong></td>
-      <td>θ ← θ − η ∇J(θ) + γv</td>
-      <td>نوسان کمتر، با حافظه گرادیان قبلی</td>
-    </tr>
-    <tr>
-      <td><strong>RMSProp</strong></td>
-      <td>θ ← θ − η / sqrt(E[∇2]) ∇J(θ)</td>
-      <td>تنظیم تطبیقی نرخ یادگیری</td>
-    </tr>
-    <tr>
-      <td><strong>Adam</strong></td>
-      <td>ترکیب RMSProp و Momentum</td>
-      <td>بهترین عملکرد در بسیاری از کاربردها</td>
-    </tr>
-  </tbody>
-</table>
+ 
+ <table>
+   <thead>
+     <tr>
+       <th>Optimizer</th>
+       <th>فرمول کلی</th>
+       <th>ویژگی‌ها</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td><strong>SGD (Stochastic Gradient Descent)</strong></td>
+       <td>θ ← θ − η ∇J(θ)</td>
+       <td>ساده، ممکن است نوسان داشته باشد</td>
+     </tr>
+     <tr>
+       <td><strong>Momentum</strong></td>
+       <td>θ ← θ − η ∇J(θ) + γv</td>
+       <td>نوسان کمتر، با حافظه گرادیان قبلی</td>
+     </tr>
+     <tr>
+       <td><strong>RMSProp</strong></td>
+       <td>θ ← θ − η / sqrt(E[∇2]) ∇J(θ)</td>
+       <td>تنظیم تطبیقی نرخ یادگیری</td>
+     </tr>
+     <tr>
+       <td><strong>Adam</strong></td>
+       <td>ترکیب RMSProp و Momentum</td>
+       <td>بهترین عملکرد در بسیاری از کاربردها</td>
+     </tr>
+   </tbody>
+ </table>
 
+ 
