@@ -113,3 +113,61 @@ Training becomes unstable or the model fails to learn.
     Residual Connections (در شبکه‌های ResNet)
 
     Gradient Clipping: محدودسازی مقدار گرادیان
+
+مقایسه Backprop دستی و خودکار
+
+<table>
+  <thead>
+    <tr>
+      <th>روش</th>
+      <th>مزایا</th>
+      <th>معایب</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>دستی (Manual Backprop)</strong></td>
+      <td>درک عمیق مفاهیم، کنترل کامل روی فرآیند</td>
+      <td>پیچیدگی بالا، خطای انسانی، مقیاس‌ناپذیری</td>
+    </tr>
+    <tr>
+      <td><strong>خودکار (Automatic Differentiation)</strong></td>
+      <td>سریع، مطمئن، مناسب پروژه‌های واقعی</td>
+      <td>پنهان شدن جزئیات الگوریتم</td>
+    </tr>
+  </
+
+بهینه‌سازی گرادیان‌ها با Optimizerها
+
+<table>
+  <thead>
+    <tr>
+      <th>Optimizer</th>
+      <th>فرمول کلی</th>
+      <th>ویژگی‌ها</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>SGD (Stochastic Gradient Descent)</strong></td>
+      <td>θ ← θ − η ∇J(θ)</td>
+      <td>ساده، ممکن است نوسان داشته باشد</td>
+    </tr>
+    <tr>
+      <td><strong>Momentum</strong></td>
+      <td>θ ← θ − η ∇J(θ) + γv</td>
+      <td>نوسان کمتر، با حافظه گرادیان قبلی</td>
+    </tr>
+    <tr>
+      <td><strong>RMSProp</strong></td>
+      <td>θ ← θ − η / sqrt(E[∇2]) ∇J(θ)</td>
+      <td>تنظیم تطبیقی نرخ یادگیری</td>
+    </tr>
+    <tr>
+      <td><strong>Adam</strong></td>
+      <td>ترکیب RMSProp و Momentum</td>
+      <td>بهترین عملکرد در بسیاری از کاربردها</td>
+    </tr>
+  </tbody>
+</table>
+
