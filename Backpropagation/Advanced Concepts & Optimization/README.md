@@ -134,10 +134,7 @@ Training becomes unstable or the model fails to learn.
          <td><strong>خودکار (Automatic Differentiation)</strong></td>
          <td>سریع، مطمئن، مناسب پروژه‌های واقعی</td>
          <td>پنهان شدن جزئیات الگوریتم</td>
-       </tr>
-  
-
-
+        </table>
 
 
 
