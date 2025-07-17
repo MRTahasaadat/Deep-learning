@@ -116,25 +116,25 @@ Training becomes unstable or the model fails to learn.
 
 مقایسه Backprop دستی و خودکار
 
-<table>
-  <thead>
-    <tr>
-      <th>روش</th>
-      <th>مزایا</th>
-      <th>معایب</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>دستی (Manual Backprop)</strong></td>
-      <td>درک عمیق مفاهیم، کنترل کامل روی فرآیند</td>
-      <td>پیچیدگی بالا، خطای انسانی، مقیاس‌ناپذیری</td>
-    </tr>
-    <tr>
-      <td><strong>خودکار (Automatic Differentiation)</strong></td>
-      <td>سریع، مطمئن، مناسب پروژه‌های واقعی</td>
-      <td>پنهان شدن جزئیات الگوریتم</td>
-    </tr>
+   <table>
+     <thead>
+       <tr>
+         <th>روش</th>
+         <th>مزایا</th>
+         <th>معایب</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><strong>دستی (Manual Backprop)</strong></td>
+         <td>درک عمیق مفاهیم، کنترل کامل روی فرآیند</td>
+         <td>پیچیدگی بالا، خطای انسانی، مقیاس‌ناپذیری</td>
+       </tr>
+       <tr>
+         <td><strong>خودکار (Automatic Differentiation)</strong></td>
+         <td>سریع، مطمئن، مناسب پروژه‌های واقعی</td>
+         <td>پنهان شدن جزئیات الگوریتم</td>
+       </tr>
   
 
 
