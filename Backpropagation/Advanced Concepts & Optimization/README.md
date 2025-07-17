@@ -16,9 +16,11 @@ The model is too simple and fails to capture the underlying patterns of the data
 
 1. Regularization (نرمال‌سازی):
    
-L1 Regularization: $$λ∑∣w∣λ∑∣w∣$$
+L1 Regularization: $$\lambda \sum |w|$$
 
-L2 Regularization: $$λ∑w2λ∑w2$$
+
+L2 Regularization: $$\lambda \sum w^2$$
+
 
 2. Dropout:
 
@@ -67,7 +69,8 @@ Good for sigmoid/tanh
 
 مناسب برای توابع فعال‌سازی مثل sigmoid و tanh
 
-              فرمول
+              $$W \sim \mathcal{N}\left(0, \frac{1}{n_{\text{in}}}\right)$$
+
             
 
 He Initialization:
@@ -76,7 +79,8 @@ Designed for ReLU
 
 مخصوص ReLU و مشتقات آن
 
-                  فرمول
+                 $$W \sim \mathcal{N}\left(0, \frac{1}{n_{\text{in}}}\right)$$
+
 
 Gradient Vanishing / Exploding Problem
 
