@@ -69,7 +69,7 @@ Good for sigmoid/tanh
 
 مناسب برای توابع فعال‌سازی مثل sigmoid و tanh
 
-              $$W \sim \mathcal{N}\left(0, \frac{1}{n_{\text{in}}}\right)$$
+   $$W \sim \mathcal{N}\left(0, \frac{1}{n_{\text{in}}}\right)$$
 
             
 
@@ -79,7 +79,7 @@ Designed for ReLU
 
 مخصوص ReLU و مشتقات آن
 
-                 $$W \sim \mathcal{N}\left(0, \frac{1}{n_{\text{in}}}\right)$$
+   $$W \sim \mathcal{N}\left(0, \frac{1}{n_{\text{in}}}\right)$$
 
 
 Gradient Vanishing / Exploding Problem
