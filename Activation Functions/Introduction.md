@@ -33,18 +33,18 @@ $$
 y = f(z)
 $$
 
-= inputs
+ inputs
 
 $$xi​$$ 
 
-= weights
+ weights
 
 $$wiwi​$$
 
-= bias
+ bias
 
 $$bb$$
 
-= activation function
+ activation function
 
 $$ff$$
