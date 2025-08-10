@@ -159,3 +159,56 @@ $$f(z_i) = \frac{e^{z_i}}{\sum_j e^{z_j}}$$
 | Softmax    | \[0, 1], Σ=1 | ✅          | طبقه‌بندی چندکلاسه    |
 
 
+ Activation Functions Analysis & Comparison
+ 
+ تحلیل و مقایسه توابع فعال‌سازی 
+
+ In this section, our goal is to understand when to use which activation function and why choosing the right one is crucial for model performance.
+
+ در این بخش، هدف ما این است که بفهمیم چه زمانی از کدام تابع استفاده کنیم و چرا انتخاب درست تابع فعال‌سازی برای عملکرد مدل بسیار مهم است.
+
+  
+  
+   Practical Recommendations
+  
+  توصیه‌های عملی 
+
+  لایه‌های پنهان (Hidden Layers): اغلب از ReLU یا نسخه‌های آن استفاده کنید.
+
+لایه خروجی (Output Layer): بسته به مسئله:
+
+    Binary Classification → Sigmoid
+
+    Multi-class Classification → Softmax
+
+    Regression → بدون تابع فعال‌سازی یا ReLU
+
+
+   مثال ترکیب توابع – Mixed Activation Example
+
+
+A neural network for MNIST digit recognition:
+
+    Hidden layers → ReLU
+
+    Output layer → Softmax
+    
+یک شبکه عصبی برای تشخیص ارقام MNIST:
+
+    لایه‌های پنهان → ReLU
+
+    لایه خروجی → Softmax
+    
+ **
+ 
+    import tensorflow as tf
+    
+    model = tf.keras.Sequential([
+        tf.keras.layers.Flatten(input_shape=(28, 28)),
+        tf.keras.layers.Dense(128, activation='relu'),
+        tf.keras.layers.Dense(64, activation='relu'),
+        tf.keras.layers.Dense(10, activation='softmax')
+    ])
+    
+ **
+    
