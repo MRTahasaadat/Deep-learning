@@ -48,3 +48,24 @@ $$bb$$
  activation function
 
 $$ff$$
+
+
+Code Example Python (NumPy)
+
+**
+
+      import numpy as np
+      
+      x = np.array([0.5, -0.2, 0.1])
+      w = np.array([0.4, 0.7, -0.5])
+      b = 0.1
+      
+      def sigmoid(z):
+          return 1 / (1 + np.exp(-z))
+      
+      z = np.dot(w, x) + b
+      y = sigmoid(z)
+      
+      print("Linear Output (z):", z)
+      print("Activated Output (y):", y)
+**
