@@ -47,3 +47,16 @@ $$J(\theta) = \frac{1}{2N} \sum_{i=1}^{N} \big(\hat{y}^{\,i} - y^i \big)^2$$
 
 $$\nabla_{\theta} J = \frac{1}{N} \sum_{i=1}^{N} \big(\hat{y}^{\,i} - y^i \big) \, \frac{\partial \hat{y}^{\,i}}{\partial \theta}$$
 
+نکات عملی | Practical notes
+
+Feature scaling (StandardScaler) تقریباً همیشه کمک می‌کند.
+
+Schedule نرخ یادگیری (مثلاً ExponentialDecay) می‌تواند همگرایی را بهبود دهد.
+افزودن L2 (Weight Decay) گرادیان را به سمت کوچک‌کردن وزن‌ها بایاس می‌کند:
+
+$$J_{\text{reg}} = J + \frac{\lambda}{2} \, \lVert \theta \rVert_2^2$$
+
+$$J_{\text{reg}} \;=\; J \;+\; \frac{\lambda}{2} \, \lVert \theta \rVert_2^2$$
+
+
+2.1) پیاده‌سازی از صفر با NumPy (رگرسیون خطی تک‌ویژگی)
