@@ -59,4 +59,5 @@ $$J_{\text{reg}} = J + \frac{\lambda}{2} \, \lVert \theta \rVert_2^2$$
 $$J_{\text{reg}} \;=\; J \;+\; \frac{\lambda}{2} \, \lVert \theta \rVert_2^2$$
 
 
-2.1) پیاده‌سازی از صفر با NumPy (رگرسیون خطی تک‌ویژگی)
+2.1) پیاده‌سازی از صفر با NumPy (رگرسیون خطی تک‌ویژگی):
+link => (https://github.com/MRTahasaadat/Deep-learning/blob/main/Optimization_and_Gradient_Descent./Batch_GD_numpy.ipynb)
