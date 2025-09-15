@@ -61,3 +61,18 @@ $$J_{\text{reg}} \;=\; J \;+\; \frac{\lambda}{2} \, \lVert \theta \rVert_2^2$$
 
 2.1) پیاده‌سازی از صفر با NumPy (رگرسیون خطی تک‌ویژگی):
 link => (https://github.com/MRTahasaadat/Deep-learning/blob/main/Optimization_and_Gradient_Descent./Batch_GD_numpy.ipynb)
+
+Why Vanilla Batch GD Isn’t Enough
+
+چرا فقط Batch GD کافی نیست؟  
+
+در داده‌های بزرگ، گرادیانِ «کلِ داده» بسیار گران است و حرکت کند می‌شود. همچنین در دره‌های باریک ممکن است نوسان داشته باشیم.
+
+ On large datasets full gradients are expensive; progress per step can be slow; ravines cause zig‑zag.
+
+راه‌حل‌های بعدی که در گام‌های بعد می‌آوریم:
+
+Stochastic / Mini‑Batch GD برای گرادیان‌های ارزان‌تر و نویزی‌تر.
+
+بهینه‌سازهای پیشرفته (Momentum, RMSProp, Adam, AdamW) برای تسریع و پایدارسازی نزول.
+
