@@ -1,4 +1,4 @@
-# Deep Learning Tutorial 📚 | آموزش یادگیری عمیق
+# Deep Learning Tutorial  | آموزش یادگیری عمیق
 
 Welcome to the **Deep Learning Tutorial** repository — a complete, structured, and bilingual (English & Persian) guide to learning Deep Learning using **TensorFlow**.
 
